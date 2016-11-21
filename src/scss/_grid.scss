@@ -1,0 +1,31 @@
+// VARIABLES
+@import "variables";
+
+// IMPORT VENDOR
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "susy"; 
+@import "breakpoint"; 
+
+// IMPORT CUSTOM
+@import "mixins";
+@import "components/typo";
+// Configuring Susy Defaults
+@include border-box-sizing;
+
+/////GRID
+	$susy: (
+		global-box-sizing: border-box,
+	  	container: 1024px,
+	  	columns: 12,
+	  	//gutters: .25,
+	  	math: fluid,
+	  	//debug: (image: show),
+	  	use-custom: (rem: true)
+	);
+
+// GENERAL
+	.container {
+		@include container;
+	}

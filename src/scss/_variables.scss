@@ -1,0 +1,37 @@
+@import "compass/typography/vertical_rhythm";
+
+// DIR
+	$srcImages: "../img/" ;	// à modifier suivant le chemin
+	// url(#{$get-path-to-assets}/
+
+// COLOR
+	// Fonts
+		$color-font-base: 		#000;
+		$color-rouge:			'red'; //Desc couleur
+		$color-primary:			#e1e1e1;
+
+	//Get rgb of color:
+	@function getrgba($color, $alpha) {
+		@return rgba(red($color) , green($color), blue($color), $alpha );
+	}
+
+// TYPOS
+	$font-normal: 'Open sans', sans-serif; 
+	$font-heading: 'Hind', sans-serif; 
+
+	$base-font-size: 16px;
+	$base-line-height: 24px;
+	$round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0.5x line height 
+	$rhythm-unit: "em"; // Sets rhythm unit to rem. Remove to use default em unit.
+
+	$head-1:	40px;
+	$head-2:	30px;
+	$head-3:	25px;
+	$head-4:	18px;
+
+// RESPONSIVE --- Breakpoint
+	// 1em ~ 16px  
+	$S:     	30em;     		//480px;   
+	$M:     	48em;     		//768px;     
+	$L:     	73.125em; 		//1170px;
+	$maxL:    	$L - 0.0625em; 	//1px;  
