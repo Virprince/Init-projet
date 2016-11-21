@@ -120,3 +120,342 @@ p {
   display: block;
   clear: both;
 }
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#navigation > .menu {
+  position: relative;
+  padding-left: 14.28571%;
+}
+#navigation > .menu:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#navigation > .menu:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 14.28571%;
+  height: 50px;
+}
+#navigation > .menu > li {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+@media (min-width: 48em) {
+  #navigation > .menu > li {
+    width: 14.28571%;
+    float: left;
+    padding-left: 1.42857%;
+    padding-right: 1.42857%;
+  }
+}
+#navigation > .menu a {
+  display: block;
+}
+#navigation > .menu > li:hover .menu {
+  display: block;
+}
+#navigation .menu .menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+#navigation {
+  padding: 0.5em 0;
+  background: #fff;
+  visibility: hidden;
+  box-shadow: 8px 8px 10px -2px rgba(50, 50, 50, 0.66);
+}
+#navigation > .menu:before {
+  background-image: url(../img/navigation__logo.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+#navigation > .menu > li > a {
+  position: relative;
+  line-height: 3.125;
+  font-size: 1em;
+  text-align: center;
+}
+@media (min-width: 73.125em) {
+  #navigation > .menu > li > a {
+    font-size: 0.8em;
+  }
+  #navigation > .menu > li > a:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: all 0.5s ease;
+  }
+  #navigation > .menu > li > a:before {
+    top: 0;
+    left: 0;
+    transform: translateY(-20px);
+  }
+}
+@media (min-width: 80em) {
+  #navigation > .menu > li > a {
+    font-size: 1em;
+  }
+}
+#navigation > .menu > li:hover > a {
+  background: #cccccc;
+}
+#navigation > .menu > li:hover > a:before {
+  transform: translateY(0px);
+  transition: all 0.5s ease;
+}
+#navigation > .menu a {
+  text-decoration: none;
+}
+#navigation .menu .menu {
+  background: #fff;
+}
+#navigation .menu .menu a {
+  padding: 0.7em 5.26316%;
+  font-size: 0.8em;
+}
+#navigation a {
+  color: #000;
+}
+#navigation a:hover {
+  background: #cccccc;
+}
+#navigation.nav-anim {
+  visibility: visible;
+}
+
+#widget-produit-OSMB-26321 {
+  width: 100%;
+}
+@media (min-width: 73.125em) {
+  #widget-produit-OSMB-26321 {
+    width: 83.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+#widget-produit-OSMB-26321 .OptMoteurEnLigne,
+#widget-produit-OSMB-26321 .OsMoteurBody,
+#widget-produit-OSMB-26321 .OsMoteurCriterisation > div {
+  width: 100%;
+}
+#widget-produit-OSMB-26321 .OsMoteurCriterisation {
+  width: 100%;
+}
+@media (min-width: 73.125em) {
+  #widget-produit-OSMB-26321 .OsMoteurCriterisation {
+    width: 83.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+#widget-produit-OSMB-26321 .OsMoteurBoutonRecherche {
+  width: 100%;
+}
+@media (min-width: 73.125em) {
+  #widget-produit-OSMB-26321 .OsMoteurBoutonRecherche {
+    width: 16.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+#widget-produit-OSMB-26321 .OsMoteurCritere_date,
+#widget-produit-OSMB-26321 .OsMoteurCritere_duree {
+  width: 100%;
+}
+@media (min-width: 73.125em) {
+  #widget-produit-OSMB-26321 .OsMoteurCritere_date,
+  #widget-produit-OSMB-26321 .OsMoteurCritere_duree {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+.OsProduitOverlay {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+@media (min-width: 48em) {
+  .OsProduitOverlay {
+    width: 83.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (min-width: 73.125em) {
+  .OsProduitOverlay {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+#widget-produit-OSMB-26321 {
+  margin: 0;
+  border-radius: 0px;
+}
+#widget-produit-OSMB-26321 .OptMoteurEnLigne {
+  background-color: transparent;
+  padding: 0;
+}
+#widget-produit-OSMB-26321 .OsMoteurCritereTitre {
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+#widget-produit-OSMB-26321 .OsMoteurCritereContenu {
+  margin: 10px 0 0 0;
+}
+#widget-produit-OSMB-26321 .OsMoteurCritereContenu input,
+#widget-produit-OSMB-26321 .OsMoteurCritereContenu .OsWrapSelect {
+  width: 100%;
+  border-radius: 0;
+  line-height: 1.8em;
+  font-size: 1.5em;
+  padding: 5px;
+  height: auto;
+  border: 2px solid #fff;
+}
+#widget-produit-OSMB-26321 .OsMoteurCritereContenu select {
+  font-size: 1em;
+}
+#widget-produit-OSMB-26321 .OsMoteurBtnRecherche {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.OsProduitOverlay {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+}
+.OsProduitOverlay .close {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.OsProduitOverlay .reservation-impossible {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+#ui-datepicker-div {
+  width: 400px;
+}
+#ui-datepicker-div .ui-datepicker-header a {
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+#ui-datepicker-div .ui-datepicker-title {
+  width: 100%;
+  clear: both;
+}
+#ui-datepicker-div .ui-datepicker-title span {
+  display: inline-block;
+  width: 49%;
+}
+#ui-datepicker-div .ui-datepicker-calendar {
+  width: 100%;
+}
+#ui-datepicker-div table span, #ui-datepicker-div table a {
+  display: inline-block;
+  width: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+#ui-datepicker-div table td, #ui-datepicker-div table th {
+  width: 14.28571%;
+  float: left;
+}
+#ui-datepicker-div table tbody td {
+  padding: 10px 0;
+}
+
+#ui-datepicker-div {
+  background: #fff;
+  padding: 10px;
+}
+#ui-datepicker-div .ui-datepicker-header a {
+  text-align: center;
+  cursor: pointer;
+}
+#ui-datepicker-div .ui-datepicker-header a span {
+  display: inline-block;
+  font-size: 0.7em;
+}
+#ui-datepicker-div .ui-datepicker-title {
+  border-bottom: 1px solid #6C7476;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: bold;
+}
+#ui-datepicker-div table span, #ui-datepicker-div table a {
+  display: block;
+  text-align: center;
+}
+#ui-datepicker-div table thead {
+  font-size: 0.8em;
+  padding: 2px;
+}
+#ui-datepicker-div table thead span {
+  border-bottom: 1px solid #000;
+}
+#ui-datepicker-div table tbody td a {
+  border-radius: 50%;
+  text-decoration: none;
+}
+#ui-datepicker-div table tbody td a.ui-state-active {
+  background: #D5B8FF;
+  color: #fff;
+}
+#ui-datepicker-div table tbody td a:hover {
+  background: #6C7476;
+  color: #fff;
+}
+#ui-datepicker-div table .ui-datepicker-week-end {
+  background: rgba(108, 116, 118, 0.2);
+}
+#ui-datepicker-div table .ui-datepicker-week-end.ui-datepicker-other-month {
+  background: none;
+}

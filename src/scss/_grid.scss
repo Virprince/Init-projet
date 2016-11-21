@@ -28,4 +28,8 @@
 // GENERAL
 	.container {
 		@include container;
+		@include susy-clearfix;
+	}
+	.clearfix {
+		@include susy-clearfix;
 	}
