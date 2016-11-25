@@ -7,8 +7,11 @@
 // COLOR
 	// Fonts
 		$color-font-base: 		#000;
-		$color-rouge:			'red'; //Desc couleur
+		$color-light:			#fff;
 		$color-primary:			#e1e1e1;
+		$color-second:			#6C7476;
+		$color-third:			#D5B8FF;
+		
 
 	//Get rgb of color:
 	@function getrgba($color, $alpha) {
@@ -29,9 +32,13 @@
 	$head-3:	25px;
 	$head-4:	18px;
 
+// OPENSYSTEM
+	$OS-id:  "OSMB-26321";
+
 // RESPONSIVE --- Breakpoint
 	// 1em ~ 16px  
 	$S:     	30em;     		//480px;   
 	$M:     	48em;     		//768px;     
 	$L:     	73.125em; 		//1170px;
+	$XL:     	80em; 			//1280px;
 	$maxL:    	$L - 0.0625em; 	//1px;  

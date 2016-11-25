@@ -1,4 +1,10 @@
-#Dossier de préparation pour un projet statique ou maquette
+# Dossier de préparation pour un projet statique ou maquette
+------------------------------------------------------------
 
-*Sass: Compass, Susy, breakpoint
-*Gulp
+**Using:**
+
+ - Gulp 
+ - Compass
+ - Susy
+ - Breakpoint
+

@@ -73,7 +73,7 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest(destAssets.scripts))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest('html'));
+		.pipe(gulp.dest(destAssets.scripts));
 });
 // assets
 gulp.task('templates', function() {

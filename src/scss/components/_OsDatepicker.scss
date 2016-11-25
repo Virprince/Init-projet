@@ -1,0 +1,119 @@
+// Style for OpenSystem Datepicker
+@import "../variables";
+
+@import "compass/reset";
+@import "compass/css3";
+@import "breakpoint";
+@import "susy";
+
+// GRID
+	#ui-datepicker-div {
+		width: 400px;
+		.ui-datepicker-header {
+			a{
+				@include span(6 inside);
+			}
+			
+		}
+		.ui-datepicker-title {
+			width: 100%;
+			clear: both;
+			span {
+				display: inline-block;
+				width: 49%;
+			}
+		}
+		.ui-datepicker-calendar {
+			width: 100%;
+		}
+		table {
+			span, a {
+				display: inline-block;
+				width: 30px;
+				line-height: 30px;
+				margin: 0 auto;
+			}
+			tr {
+
+			}
+			td, th {
+
+				@include span(1 of 7 inside no-gutters);
+
+			}
+			thead {
+
+			}
+			tbody {
+				tr {
+					
+				}
+				td {
+					padding: 10px 0;
+				}
+			}
+		}
+
+	}
+// MODULE
+	
+	#ui-datepicker-div {
+		background: $color-light;
+		padding: 10px;
+
+		.ui-datepicker-header {
+			a{
+				text-align: center;
+				cursor: pointer;
+				span {
+					display: inline-block;
+					font-size: 0.7em;
+				}
+			}
+			
+		}
+		.ui-datepicker-title {
+			border-bottom: 1px solid $color-second;
+			text-align: center;
+			padding: 5px 0;
+			font-weight: bold;
+		}
+		table {
+			span, a {
+				display: block;
+				text-align: center;
+			}
+			
+			thead {
+				font-size: 0.8em;
+				padding: 2px;
+				span {
+					border-bottom: 1px solid $color-font-base;
+				}
+			}
+			tbody {
+
+				td {
+					a {
+						@include border-radius(50%);
+						text-decoration: none;
+						&.ui-state-active {
+							background: $color-third;
+							color: $color-light;
+						}
+						&:hover {
+							background: $color-second;
+							color: $color-light;
+						}
+					}
+				}
+				
+			}
+			.ui-datepicker-week-end {
+				background: getrgba($color-second,0.2);
+				&.ui-datepicker-other-month {
+					background: none;
+				}
+			}
+		}
+	} 

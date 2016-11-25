@@ -1,0 +1,117 @@
+// Style for OpenSystem
+@import "../variables";
+
+@import "compass/reset";
+@import "compass/css3";
+@import "breakpoint";
+@import "susy";
+
+/// GRID
+	#widget-produit-#{$OS-id} {
+		width: 100%;
+		@include breakpoint($L){
+			@include span(10 inside);
+		}
+		.OptMoteurEnLigne,
+		.OsMoteurBody,
+		.OsMoteurCriterisation > div {
+			width: 100%;
+
+		}
+
+		.OsMoteurCriterisation {
+			width: 100%;
+			@include breakpoint($L){
+				@include span(10 inside);
+			}
+		}
+		.OsMoteurBoutonRecherche {
+			width: 100%;
+			@include breakpoint($L){
+				@include span(2 inside);
+			}
+		}
+		
+		.OsMoteurCritere_date,
+		.OsMoteurCritere_duree {
+			width: 100%;
+			@include breakpoint($L){
+				@include span(6 inside);
+			}
+		}
+		
+
+	}
+	.OsProduitOverlay {
+		@include span(12 inside);
+		@include breakpoint($M){
+			@include span(10 inside);
+		}
+		@include breakpoint($L){
+			@include span(8 inside);
+		}
+	}
+
+// MODULES
+	#widget-produit-#{$OS-id} {
+		margin: 0;
+		border-radius: 0px;
+		.OptMoteurEnLigne {
+			background-color: transparent;
+			padding: 0;
+
+		}
+		.OsMoteurCritereTitre {
+			text-transform: uppercase;
+			color: $color-light;
+			padding-bottom: 5px;
+			border-bottom: 2px solid $color-light;
+			font-size: 1.1em;
+			line-height: 1.2em;
+		}
+		.OsMoteurCritereContenu {
+			margin: 10px 0 0 0;
+
+			input,
+			.OsWrapSelect {
+				width: 100%;
+				border-radius: 0;
+				line-height: 1.8em;
+				font-size: 1.5em;
+				padding: 5px;
+				height: auto;
+				border: 2px solid $color-light;
+			}
+			select {
+				font-size: 1em;
+			}
+		}
+		.OsMoteurBtnRecherche {
+			background-color: transparent;
+			border-radius: 0px;
+			// @extend .btn;
+			// @extend .btn-block;
+		}
+
+	}
+	.OsProduitOverlay {
+		position: relative;
+		background: $color-light;
+		padding: 20px;
+
+		.close {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			right: 0;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			// background: $color-blue;
+		}
+		.reservation-impossible {
+			text-align: center;
+			font-size: 1.5em;
+			line-height: 2em;
+		}
+	}

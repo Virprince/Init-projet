@@ -31,18 +31,3 @@
 	max-width: 100%;
 	height: auto;
 }
-// MediaQ
- @mixin breakpoint($point) {
-  @if $point == S {
-  @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $point == M {
-   @media only screen and (min-width: $M) { @content; } 
-  }
-  @else if $point == L {
-   @media only screen and (min-width: $L) { @content; } 
-  }
-  @else if $point == maxL {
-   @media only screen and (max-width: $maxL) { @content; } 
-  }
-}
