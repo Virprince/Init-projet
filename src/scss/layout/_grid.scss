@@ -1,16 +1,12 @@
-// VARIABLES
-@import "variables";
-
-// IMPORT VENDOR
+// MODULES
+@import "../helpers/glob";
+// PLUGINS
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
 @import "susy"; 
 @import "breakpoint"; 
 
-// IMPORT CUSTOM
-@import "mixins";
-@import "components/typo";
 // Configuring Susy Defaults
 @include border-box-sizing;
 

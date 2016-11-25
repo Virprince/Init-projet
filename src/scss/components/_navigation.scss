@@ -1,12 +1,11 @@
-@import "../variables";
-
+// MODULES
+@import "../helpers/glob";
+// PLUGINS
 @import "compass/reset";
 @import "compass/css3";
-@import "compass/typography";
-@import "breakpoint";
-@import "susy";
-
-@import "../mixins";
+@import "compass/typography/vertical_rhythm";
+@import "susy"; 
+@import "breakpoint"; 
 // positionnement global dans _grid
 // layout
 	#navigation {

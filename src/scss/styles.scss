@@ -1,22 +1,8 @@
-// VARIABLES
-@import "variables";
+// APP.SCSS
+// THE ONE TO RULE THEM ALL 
 
-// IMPORT VENDOR
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/typography/vertical_rhythm";
-@import "susy"; 
-@import "breakpoint"; 
-
-// IMPORT CUSTOM
-@import "mixins";
-@import "components/typo";
-
-// IMPORT STYLES
-@import "grid"; 
-@import "components/navigation";
-@import "modules"; 
-
-// IMPORT OPTIONS
-@import "components/OpenSystem";
-@import "components/OsDatepicker";
+@import "base/glob";
+@import "components/glob";
+@import "layout/glob";
+@import "helpers/glob";
+@import "vendors/glob";
