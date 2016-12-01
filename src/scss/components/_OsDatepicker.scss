@@ -1,11 +1,11 @@
-// Style for OpenSystem Datepicker
-@import "../variables";
-
+// MODULES
+@import "../helpers/glob";
+// PLUGINS
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "susy"; 
 @import "breakpoint";
-@import "susy";
-
 // GRID
 	#ui-datepicker-div {
 		width: 400px;

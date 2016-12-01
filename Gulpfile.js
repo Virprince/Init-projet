@@ -1,4 +1,4 @@
-// npm install gulp gulp-compass gulp-autoprefixer gulp-jshint gulp-clean gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-notify gulp-livereload gulp-plumber path susy --save-dev
+// npm install gulp gulp-compass gulp-autoprefixer gulp-sourcemaps gulp-jshint gulp-clean gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-notify gulp-livereload gulp-plumber path susy --save-dev
 
 //load plugins
 var gulp             = require('gulp'),
@@ -13,6 +13,7 @@ var gulp             = require('gulp'),
 	notify           = require('gulp-notify'),
 	livereload       = require('gulp-livereload'),
 	plumber          = require('gulp-plumber'),
+	sourcemaps 		 = require('gulp-sourcemaps'),
 	path             = require('path');
 
 //the title and icon that will be used for the Grunt notifications
@@ -58,7 +59,7 @@ gulp.task('styles', function() {
 			image: destAssets.img,
 		    sourcemap: true
 		}))
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		// .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest(destAssets.styles))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(minifycss())
